@@ -19,7 +19,7 @@ pipeline {
 
 		stage('Test'){
 			steps{
-				bat "bin\mvn test"
+				bat "mvn test"
 			}
 		}
 
