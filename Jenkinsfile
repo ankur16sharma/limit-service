@@ -13,19 +13,19 @@ pipeline {
 
 		stage('Build'){
 			steps {
-				bat "C:\Users\ankur\Documents\workspaceNewEclipse\apache-maven-3.9.3\bin\mvn clean install -DskipTests"
+				bat "mvn clean install -DskipTests"
 			}
 		}
 
 		stage('Test'){
 			steps{
-				bat "C:\Users\ankur\Documents\workspaceNewEclipse\apache-maven-3.9.3\bin\mvn test"
+				bat "bin\mvn test"
 			}
 		}
 
 		stage('Deploy') {
 			steps {
-			    bat "C:\Users\ankur\Documents\workspaceNewEclipse\apache-maven-3.9.3\bin\mvn jar:jar deploy:deploy"
+			    bat "mvn jar:jar deploy:deploy"
 			}
 		}
 	}
