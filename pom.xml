@@ -63,6 +63,15 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	
+	<distributionManagement>
+	   <repository>
+	       <uniqueVersion>false</uniqueVersion>
+	       <id>limit-service-release</id>
+	       <name>limit-service-release</name>
+	       <url>http://localhost:8081/repository/limit-service-release/</url>
+	   </repository>
+	</distributionManagement>
 
 	<build>
 		<plugins>
